@@ -2,19 +2,19 @@ import { analisisGif, calendar, health, line1Beranda, line2Beranda, line3Beranda
 
 export const NAV_LIST = [
   {
-    id: '0',
-    title: 'Beranda',
-    url: '/'
-  },
-  {
     id: '1',
-    title: 'Fitur',
-    url: '/fitur'
+    title: 'Analisis Wajah',
+    url: '/analisis'
   },
   {
     id: '2',
-    title: 'Survey',
-    url: '/survey'
+    title: 'Progress Tracking',
+    url: '/progress'
+  },
+  {
+    id: '3',
+    title: 'Virtual Try-on',
+    url: '/virtual'
   },
 ];
 

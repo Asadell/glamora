@@ -1,14 +1,14 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
-const Fitur = () => {
+const Analisis = () => {
   return (
     <div className="bg-[#EAEBF9] min-h-screen">
       <Navbar/>
-      <h1 className="h-full">Fitur</h1>
+      <h1 className="h-full">Analisis</h1>
       <Footer/>
     </div>
   );
 }
 
-export default Fitur;
+export default Analisis;

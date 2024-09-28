@@ -18,5 +18,6 @@ import progressGif from './beranda/progress-gif.gif';
 import virtualGif from './beranda/virtual-gif.gif';
 import arrowRight from './beranda/arrow-right.svg';
 import faceInMirror from './beranda/face-in-mirror.png';
+import nattaya from './nattaya.svg';
 
-export { faceInMirror, arrowRight, virtualGif, progressGif, analisisGif, starFeature, aboutBeranda, glamora, starsRight, starsLeft, faceBeranda, macbook, calendar, ellipse, health, shapes, line1Beranda, line2Beranda, line3Beranda, ellipseAnalisis };
+export { nattaya, faceInMirror, arrowRight, virtualGif, progressGif, analisisGif, starFeature, aboutBeranda, glamora, starsRight, starsLeft, faceBeranda, macbook, calendar, ellipse, health, shapes, line1Beranda, line2Beranda, line3Beranda, ellipseAnalisis };

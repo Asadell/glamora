@@ -1,14 +1,14 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
-const Survey = () => {
+const Progress = () => {
   return (
     <div className="bg-[#EAEBF9] min-h-screen">
       <Navbar/>
-      <h1 className="h-full">Survey</h1>
+      <h1 className="h-full">Progress</h1>
       <Footer/>
     </div>
   );
 }
 
-export default Survey;
+export default Progress;
