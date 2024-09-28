@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-plus-jakarta-sans;
+}
+
 @layer components {
   .navbar-border-effect {
-    @apply text-base pb-4 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:bg-primary-gradient hover:after:h-[4px] after:transition-all;
+    @apply text-base pb-3 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:bg-primary-gradient hover:after:h-[4px] after:transition-all;
   }
 }

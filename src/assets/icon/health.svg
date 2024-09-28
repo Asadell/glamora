@@ -1,0 +1,23 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="vuesax/bold/health">
+<g id="health">
+<path id="Vector" d="M14.6666 5.20665V8.33331H11.9466C11.8666 8.32665 11.6933 8.22665 11.6533 8.15331L10.96 6.83998C10.6866 6.31998 10.2133 6.02665 9.70665 6.05331C9.19998 6.07998 8.76665 6.41998 8.54665 6.97331L7.62665 9.27998L7.49331 8.93331C7.16665 8.08665 6.23331 7.44665 5.31331 7.44665L1.33331 7.46665V5.20665C1.33331 2.77998 2.77998 1.33331 5.20665 1.33331H10.7933C13.22 1.33331 14.6666 2.77998 14.6666 5.20665Z" fill="url(#paint0_linear_230_18)"/>
+<path id="Vector_2" d="M14.6666 10.7933V9.33335H11.9466C11.5 9.33335 10.9733 9.01335 10.7666 8.62002L10.0733 7.30668C9.88665 6.95335 9.61998 6.97335 9.47331 7.34002L7.93998 11.2133C7.77331 11.6467 7.49331 11.6467 7.31998 11.2133L6.55998 9.29335C6.37998 8.82668 5.81998 8.44668 5.31998 8.44668L1.33331 8.46668V10.7933C1.33331 13.18 2.73331 14.62 5.08665 14.66C5.15998 14.6667 5.23998 14.6667 5.31331 14.6667H10.6466C10.7466 14.6667 10.8466 14.6667 10.94 14.66C13.28 14.6067 14.6666 13.1733 14.6666 10.7933Z" fill="url(#paint1_linear_230_18)"/>
+<path id="Vector_3" d="M1.33335 8.46667V10.6733C1.32002 10.46 1.31335 10.2333 1.31335 10V8.46667H1.33335Z" fill="url(#paint2_linear_230_18)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_230_18" x1="14.6666" y1="9.27998" x2="0.889519" y2="8.41682" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7E7FB8"/>
+<stop offset="1" stop-color="#9D9FE6"/>
+</linearGradient>
+<linearGradient id="paint1_linear_230_18" x1="14.6666" y1="14.6667" x2="0.894332" y2="13.7661" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7E7FB8"/>
+<stop offset="1" stop-color="#9D9FE6"/>
+</linearGradient>
+<linearGradient id="paint2_linear_230_18" x1="1.33335" y1="10.6733" x2="1.31261" y2="10.6733" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7E7FB8"/>
+<stop offset="1" stop-color="#9D9FE6"/>
+</linearGradient>
+</defs>
+</svg>
