@@ -16,4 +16,8 @@ body {
   .lavender-text {
     @apply bg-lavenderHue text-transparent bg-clip-text;
   }
+
+  .titleHighlight {
+    @apply font-bold text-4xl text-center bg-deepSlate text-transparent bg-clip-text;
+  }
 }
