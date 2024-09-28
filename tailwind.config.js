@@ -5,6 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        default: '1rem',
+        sm: '1.25rem',
+        lg: '5rem',
+      },
+    },
     extend: {
       fontFamily: {
         'plus-jakarta-sans': ["Plus Jakarta Sans","sans-serif"],
@@ -19,7 +27,6 @@ export default {
         lavenderHue: '#EBECFA',
         deepSlate: '#3F405C',
         softIndigo: '#C4C5F0',
-        // mutedIndigo: '#8183BD',
         lightPeriwinkle: '#9D9FE6',
         coolIndigo: '#7E7FB8',
         lightIndigo: '#8586C3',
@@ -30,6 +37,7 @@ export default {
         charcoalGray: '#30303D',
         slateStorm: '#5F6265',
         midnightBlack: '#131414',
+        deepTeal: '#042327',
       },
     },
   },

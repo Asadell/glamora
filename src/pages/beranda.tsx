@@ -1,12 +1,19 @@
+import About from "../components/Beranda/About";
+import Features from "../components/Beranda/Features";
 import Hero from "../components/Beranda/Hero";
-import Navbar from "../components/Survey/Navbar";
+import Survey from "../components/Beranda/Survey";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const Beranda = () => {
   return (
     <div className="bg-lavenderHue min-h-screen ">
       <Navbar/>
       <Hero/>
-      <h1>Beranda</h1>
+      <About/>
+      <Features/>
+      <Survey/>
+      <Footer/>
     </div>
   );
 }

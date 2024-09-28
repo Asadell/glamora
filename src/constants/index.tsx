@@ -1,4 +1,4 @@
-import { calendar, health, line1Beranda, line2Beranda, line3Beranda, shapes } from "../assets";
+import { analisisGif, calendar, health, line1Beranda, line2Beranda, line3Beranda, progressGif, shapes, virtualGif } from "../assets";
 
 export const NAV_LIST = [
   {
@@ -66,5 +66,44 @@ export const LINE_INFO_BOX_BERANDA = [
     bottom: 186,
     right: 337,
     left: 0,
+  },
+];
+
+export const ABOUT_INFO_LIST = [
+  {
+    text: 'Memberikan Solusi Kecantikan yang Tepat',
+  },
+  {
+    text: 'Mendorong Kesadaran dan Pemahaman Diri',
+  },
+  {
+    text: 'Menghadirkan Pengalaman Kecantikan Interaktif',
+  },
+];
+
+export const FEATURE_BERANDA_LIST = [
+  {
+    isFeature: false,
+    title: 'Fitur Utama',
+    text: 'Kira-kira fitur apa aja ya yang tersedia di Glamora? Yuk, kepoin!',
+    image: '',
+  },
+  {
+    isFeature: true,
+    title: 'Analisis Wajah',
+    text: 'Ketahui bentuk wajah dan kondisi kulit untuk menemukan gaya dan perawatan yang sesuai.',
+    image: analisisGif,
+  },
+  {
+    isFeature: true,
+    title: 'Progress Tracking',
+    text: 'Lacak perkembangan kondisi kulitmu seiring waktu untuk mencapai hasil yang diinginkan.',
+    image: progressGif,
+  },
+  {
+    isFeature: true,
+    title: 'Virtual Try-on',
+    text: 'Dengan teknologi AR, coba berbagai gaya makeup, rambut, atau aksesoris secara virtual.',
+    image: virtualGif,
   },
 ];

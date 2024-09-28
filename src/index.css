@@ -12,4 +12,8 @@ body {
   .navbar-border-effect {
     @apply text-base pb-3 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:bg-primary-gradient hover:after:h-[4px] after:transition-all;
   }
+
+  .lavender-text {
+    @apply bg-lavenderHue text-transparent bg-clip-text;
+  }
 }
