@@ -4,7 +4,7 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Beranda from './pages/beranda';
 import Fitur from './pages/fitur';
-import Survey from './pages/survey';
+import Survey from './pages/survey/survey';
 
 const router = createBrowserRouter([
   {

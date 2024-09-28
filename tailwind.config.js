@@ -38,6 +38,17 @@ export default {
         slateStorm: '#5F6265',
         midnightBlack: '#131414',
         deepTeal: '#042327',
+        accent: {
+          100: '#FFF5F5',
+          200: '#F9DCDC',
+          700: '#A75C5C',
+        },
+        grey: {
+          100: '#DFE0E0',
+          300: '#9FA1A3',
+          400: '#7F8184',
+          500: '#5F6265',
+        }
       },
     },
   },
