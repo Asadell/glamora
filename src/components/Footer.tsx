@@ -12,8 +12,8 @@ const Footer = () => {
           <h5 className="text-lg md:text-xl font-bold lavender-text">Tautan</h5>
           <div className="flex flex-col gap-2 md:gap-4">
             <div><NavLink to='/' className='lavender-text text-sm md:text-base font-medium hover:font-bold'>Beranda</NavLink></div>
-            <span className='lavender-text text-sm md:text-base font-medium'>Fitur</span>
-            <span className='lavender-text text-sm md:text-base font-medium'>Survey</span>
+            <div><NavLink to='/' className='lavender-text text-sm md:text-base font-medium hover:font-bold'>Fitur</NavLink></div>
+            <div><NavLink to='/' className='lavender-text text-sm md:text-base font-medium hover:font-bold'>Survey</NavLink></div>
           </div>
         </div>
         <div className="flex flex-col gap-4 md:gap-6">

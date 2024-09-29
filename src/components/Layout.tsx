@@ -10,6 +10,7 @@ const Layout = () => {
   return (
     <div className="bg-image min-h-screen">
       <Navbar/>
+      <div className="pt-16"></div>
       <ScrollReveal/>
       <ScrollToTop/>
       <Outlet/>

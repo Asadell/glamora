@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { arrowRight } from "../../assets";
+import { arrowRight } from "../../../assets";
 
 interface FeatureBoxProps {
   isFeature: boolean,
