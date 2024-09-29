@@ -27,24 +27,30 @@ export default function TryOnVideo({ selectedItemImage, containerRef }: TryOnVid
   useEffect(() => {
     const updateStageSize = () => {
       if (containerRef.current) {
+        const { offsetWidth, offsetHeight } = containerRef.current;
+  
+        // Set a minimum width and height for mobile screens
+        const minWidth = 480;  // Example minimum width for mobile devices
+        const minHeight = 480; // Example minimum height for mobile devices
+  
         setStageSize({
-          width: containerRef.current.offsetWidth,
-          height: containerRef.current.offsetHeight,
+          width: Math.max(offsetWidth, minWidth),
+          height: Math.max(offsetHeight, minHeight),
         });
       }
     };
-
+  
     updateStageSize();
     window.addEventListener("resize", updateStageSize);
-
+  
     return () => {
       window.removeEventListener("resize", updateStageSize);
     };
   }, [containerRef]);
+  
 
   useEffect(() => {
     handleImageLoad();
-    // Reset selectedShape whenever the image changes
     setSelectedShape(null);
   }, [image]);
 
@@ -53,7 +59,6 @@ export default function TryOnVideo({ selectedItemImage, containerRef }: TryOnVid
       transformerRef.current.nodes([imageRef.current]);
       transformerRef.current.getLayer().batchDraw();
     } else if (transformerRef.current) {
-      // Clear the transformer if no shape is selected
       transformerRef.current.nodes([]);
     }
   }, [selectedShape]);
@@ -98,17 +103,17 @@ export default function TryOnVideo({ selectedItemImage, containerRef }: TryOnVid
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full p-6">
+    <div className="flex flex-col items-center justify-center w-full h-full p-6" style={{minHeight: "30rem"}}>
       <div
         ref={containerRef}
         className="w-full h-full max-w-3xl rounded-lg overflow-hidden shadow-lg relative"
       >
-        <Webcam
-          audio={false}
-          ref={webcamRef}
-          videoConstraints={videoConstraints}
-          className="w-full h-full object-cover absolute"
-        />
+          <Webcam
+            audio={false}
+            ref={webcamRef}
+            videoConstraints={videoConstraints}
+            className="w-full h-full object-cover absolute"
+          />
         <Stage 
           width={stageSize.width} height={stageSize.height}
         >

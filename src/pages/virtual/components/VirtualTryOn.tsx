@@ -44,9 +44,9 @@ export default function VirtualTryOn() {
         Virtual Try-on
       </h1>
 
-      <div className="mt-10 rounded-xl bg-white w-full items-centers justify-center h-full flex">
+      <div className="mt-10 rounded-xl bg-white w-full items-centers justify-center h-full flex lg:flex-row flex-col-reverse">
         <div className="p-6">
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-2">
             {items.map((item, index) => {
               return (
                 <Chip
@@ -60,13 +60,12 @@ export default function VirtualTryOn() {
               );
             })}
           </div>
-          <div className="my-8 grid grid-cols-3 gap-4 reveal">
+          <div className="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
             {items[selected].items.map((item, index) => {
                 return (
-                    <div className="col-span-1">
+                    <div>
                       <ItemCard
                         key={index}
-                        additionalClass={items[selected].additionalClass}
                         title={item.title}
                         isActive={selectedItem == index}
                         image={`${items[selected].prefix}/${item.image}`}
@@ -85,7 +84,7 @@ export default function VirtualTryOn() {
             />
           </div>
         </div>
-        <div className="w-full" ref={containerRef}>
+        <div className="w-full" style={{minHeight: "30rem"}} ref={containerRef}>
           <TryOnVideo key={tryOnKey} containerRef={containerRef} selectedItemImage={`${items[selected].prefix}/${items[selected].items[selectedItem].image}`}
           />
         </div>
