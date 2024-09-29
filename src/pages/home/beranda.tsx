@@ -5,7 +5,7 @@ import Survey from "./components/Survey";
 
 const Beranda = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen p-6">
       <Hero />
       <About />
       <Features />

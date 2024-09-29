@@ -4,7 +4,7 @@ import { faceInMirror } from "../../../assets";
 
 const Survey = () => {
   return (
-    <Container className="my-[100px] p-6">
+    <Container className="my-[100px]">
       <div className="flex flex-col text-white lg:flex-row justify-between items-center bg-primary-gradient rounded-[40px] overflow-hidden">
         <div className="flex-1 w-full h-[348px] lg:h-[400px]">
           <img src={faceInMirror} alt="About" className="w-full h-full object-cover" />
