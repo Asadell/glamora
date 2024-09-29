@@ -43,59 +43,34 @@ export const TRY_ON_ITEMS = [
     ],
   },
   {
-    title: "Warna Rambut",
-    prefix: "hair",
+    title: "Topi",
+    prefix: "hats",
     items: [
         {
-            title: "Garnet Red",
-            image: "hair_garnet_red.svg",
+            title: "Beret",
+            image: "hat_beret.svg",
         },
         {
-            title: "Ginger Red",
-            image: "hair_ginger_red.svg",
+            title: "Bucket",
+            image: "hat_bucket.svg",
         },
         {
-            title: "Light Blonde",
-            image: "hair_light_blonde.svg",
+            title: "Cap",
+            image: "hat_cap.svg",
         },
         {
-            title: "Light Brown",
-            image: "hair_light_brown.svg",
+            title: "Felted",
+            image: "hat_felted.svg",
         },
         {
-            title: "Medium Brown",
-            image: "hair_medium_brown.svg",
+            title: "Straw",
+            image: "hat_straw.svg",
         },
         {
-            title: "Neutral Blonde",
-            image: "hair_neutral_blonde.svg",
+            title: "Visor",
+            image: "hat_visor.svg",
         },
     ],
   },
-  {
-    title: "Makeup",
-    prefix: "makeup",
-    items: [
-        {
-            title: "Dolly",
-            image: "makeup_dolly.svg",
-        },
-        {
-            title: "Glam",
-            image: "makeup_glam.svg",
-        },
-        {
-            title: "Hippie",
-            image: "makeup_hippie.svg",
-        },
-        {
-            title: 'Monochromatic',
-            image: "makeup_monochromatic.svg",
-        },
-        {
-            title: "Soft Glam",
-            image: "makeup_soft_glam.svg",
-        }
-    ],
-  },
+
 ];
