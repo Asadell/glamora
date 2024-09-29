@@ -74,3 +74,4 @@ export const TRY_ON_ITEMS = [
   },
 
 ];
+// sumber foto dari 'H&M'
