@@ -103,7 +103,7 @@ export const FEATURE_BERANDA_LIST = [
   {
     isFeature: true,
     title: 'Virtual Try-on',
-    text: 'Dengan teknologi AR, coba berbagai gaya makeup, rambut, atau aksesoris secara virtual.',
+    text: 'Dengan teknologi AR, coba berbagai gaya aksesoris dengan praktis secara virtual.',
     image: virtualGif,
   },
 ];

@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 
 const Progress = () => {
   return (
-    <div className="bg-[#EAEBF9] min-h-screen">
+    <div className="min-h-screen">
       <Hero />
       <Catatan />
     </div>

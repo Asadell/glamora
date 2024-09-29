@@ -27,8 +27,7 @@ const Hero = () => {
           <img src={starsLeft} alt="Stars Left" className="h-[150px]"/>
         </div>
         <div>
-          <h1 className="text-deepSlate text-center text-5xl font-bold text">Pancarkan Kilau Pesonamu</h1>
-          <h1 className="text-deepSlate text-center text-5xl font-bold text">Bersama <span className="bg-primary-gradient text-transparent bg-clip-text">Glamora</span></h1>
+          <h1 className="text-deepSlate text-center text-5xl font-bold text reveal">Pancarkan Kilau Pesonamu<br/>Bersama <span className="bg-primary-gradient text-transparent bg-clip-text">Glamora</span></h1>
         </div>
         <div>
           <img src={starsRight} alt="Stars Right" className="h-[150px]"/>
