@@ -19,7 +19,7 @@ export default function TryOnVideo({ selectedItemImage, containerRef }: TryOnVid
     isDragging: false,
   });
   const [selectedShape, setSelectedShape] = useState<string | null>(null);
-  const [image] = useImage(selectedItemImage ? `/src/assets/items/${selectedItemImage}` : "");
+  const [image] = useImage(selectedItemImage ? `/assets/items/${selectedItemImage}` : "");
 
   const transformerRef = useRef<any>(null);
   const imageRef = useRef<any>(null);

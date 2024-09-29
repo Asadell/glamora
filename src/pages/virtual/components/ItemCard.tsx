@@ -15,7 +15,7 @@ export default function ItemCard({
   const borderColor = isActive ? "accent-200" : "grey-100";
   const textColor = isActive ? 'text-accent-700' : 'text-grey-500';
 
-  const imgSrc = `/src/assets/items/${image}`;
+  const imgSrc = `/assets/items/${image}`;
   const img = new Image();
   img.src = imgSrc;
 
