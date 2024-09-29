@@ -3,7 +3,6 @@ interface ItemCardProps {
   image: string;
   isActive: boolean;
   onClick?: () => void;
-  additionalClass?: string;
 }
 
 export default function ItemCard({
@@ -11,7 +10,6 @@ export default function ItemCard({
   image,
   isActive,
   onClick,
-  additionalClass,
 }: ItemCardProps) {
   const bgColor = isActive ? "bg-accent-100" : "bg-grey-100";
   const borderColor = isActive ? "accent-200" : "grey-100";
@@ -30,7 +28,7 @@ export default function ItemCard({
         <img
           src={imgSrc}
           alt={title}
-          className={`w-full h-28 ${additionalClass ?? 'object-cover'} rounded-xl`}
+          className={`w-full h-28 object-contain rounded-xl`}
         />
       </div>
       <p className={`my-2 text-lg ${textColor} ${isActive ? 'font-bold' : ''}`}>{title}</p>
