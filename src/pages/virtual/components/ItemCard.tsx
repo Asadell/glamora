@@ -31,7 +31,7 @@ export default function ItemCard({
           className={`w-full h-28 object-contain rounded-xl`}
         />
       </div>
-      <p className={`my-2 text-lg ${textColor} ${isActive ? 'font-bold' : ''}`}>{title}</p>
+      <p className={`my-2 text-lg text-center ${textColor} ${isActive ? 'font-bold' : ''}`}>{title}</p>
     </div>
   );
 }

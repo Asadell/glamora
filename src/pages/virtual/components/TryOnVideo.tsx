@@ -29,9 +29,8 @@ export default function TryOnVideo({ selectedItemImage, containerRef }: TryOnVid
       if (containerRef.current) {
         const { offsetWidth, offsetHeight } = containerRef.current;
   
-        // Set a minimum width and height for mobile screens
-        const minWidth = 480;  // Example minimum width for mobile devices
-        const minHeight = 480; // Example minimum height for mobile devices
+        const minWidth = 480;  
+        const minHeight = 480;
   
         setStageSize({
           width: Math.max(offsetWidth, minWidth),

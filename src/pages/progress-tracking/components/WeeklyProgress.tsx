@@ -49,29 +49,34 @@ export default function WeeklyProgress() {
 
       <div className="flex gap-6 w-full">
         <div>
-          {categories.map((item) => {
+          {categories.map((item, index) => {
+            const margin = index === 0 ? "mt-[3rem]" : "mt-[1rem]";
             return (
-              <div className="flex gap-4 mt-7 items-center">
+              <div className={`flex gap-4 md:mt-7 ${margin} items-center`}>
                 <div className="text-softIndigo">{item.icon}</div>
-                <div className="font-light text-xl">{item.label}</div>
+                <div className="font-light text-md md:text-lg lg:text-xl">{item.label}</div>
               </div>
             );
           })}
         </div>
-        <div>
+        <div className="w-full">
           <div className="grid grid-cols-7 gap-2 w-full">
             {progress.map((item: any) => {
-                let formattedDate = moment(item.date).format('D MMM');
+              let formattedDate = moment(item.date).format("D MMM");
 
               return (
-                <div className="flex items-center flex-col gap-4">
-                    <div className="text-xs text-center text-slateStorm">{formattedDate}</div>
+                <div className="grid grid-cols-1 justify-center items-center gap-4">
+                  <div className="text-xs text-center text-slateStorm">
+                    {formattedDate}
+                  </div>
                   {categories.map((category: any) => {
                     const bgColor =
                       item[category.labelSlug].toString() === "true"
                         ? "bg-success-300"
                         : "bg-danger-300";
-                    return <div className={`p-5 rounded-md ${bgColor}`}></div>;
+                    return (
+                      <div className={`w-full h-8 md:h-10 rounded-md ${bgColor}`}></div>
+                    );
                   })}
                 </div>
               );
