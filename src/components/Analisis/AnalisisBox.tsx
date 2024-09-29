@@ -1,5 +1,5 @@
 import { ANALISIS_WAJAH_LIST } from "../../constants";
-import FlexIcon from "../Progress/FlexIcon";
+import FlexIcon from "../../pages/progress-tracking/components/FlexIcon";
 
 interface AnalisisWajahProps {
   index: number,

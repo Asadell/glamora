@@ -43,6 +43,12 @@ export default {
         softPink: '#FFF5F5',
         dustyPink: '#F9DCDC',
         darkMocha: '#302121',
+        danger: {
+          300: '#F2887F',
+        },
+        success: {
+          300: '#6CCDAB',
+        },
         accent: {
           100: '#FFF5F5',
           200: '#F9DCDC',

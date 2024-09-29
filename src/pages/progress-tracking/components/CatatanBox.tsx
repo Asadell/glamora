@@ -1,4 +1,4 @@
-import { moreCircle } from "../../assets";
+import { moreCircle } from "../../../assets";
 
 interface ShapeData {
   image: string,
@@ -18,7 +18,7 @@ interface CatatanBoxProps {
 
 const CatatanBox = ({ catatan } : CatatanBoxProps) => {
   return (
-    <div className="flex flex-col justify-between w-[434px] rounded-3xl overflow-hidden bg-white gap-6 p-6">
+    <div className="flex flex-col justify-between w-full rounded-3xl overflow-hidden bg-white gap-6 p-6">
       <div className="flex flex-row justify-between">
         <span className="font-medium">{catatan.date}</span>
         <img src={moreCircle} alt="Circle" />
