@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-plus-jakarta-sans;
+  @apply font-plus-jakarta-sans bg-lavenderHue;
 }
 
 @layer components {
@@ -15,5 +15,15 @@ body {
 
   .lavender-text {
     @apply bg-lavenderHue text-transparent bg-clip-text;
+  }
+
+  .titleHighlight {
+    @apply font-bold text-4xl text-center bg-deepSlate text-transparent bg-clip-text;
+  }
+}
+
+@layer utilities {
+  .last-in-middle {
+    grid-column: 2 / span 1;
   }
 }

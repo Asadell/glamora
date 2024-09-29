@@ -11,17 +11,17 @@ const Footer = () => {
         <div className="flex flex-col gap-6">
           <h5 className="text-xl font-bold lavender-text">Tautan</h5>
           <div className="flex flex-col gap-4">
-            <NavLink to='/' className='lavender-text text-base font-medium'>Beranda</NavLink>
-            <NavLink to='/fitur' className='lavender-text text-base font-medium'>Fitur</NavLink>
-            <NavLink to='/survey' className='lavender-text text-base font-medium'>Survey</NavLink>
+            <div><NavLink to='/' className='lavender-text text-base font-medium hover:font-bold'>Beranda</NavLink></div>
+            <span className='lavender-text text-base font-medium'>Fitur</span>
+            <span className='lavender-text text-base font-medium'>Survey</span>
           </div>
         </div>
         <div className="flex flex-col gap-6">
           <h5 className="text-xl font-bold lavender-text">Layanan</h5>
           <div className="flex flex-col gap-4">
-            <span className='lavender-text text-base font-medium'>Analisis Wajah</span>
-            <span className='lavender-text text-base font-medium'>Progress Tracking</span>
-            <span className='lavender-text text-base font-medium'>Virtual Try-on</span>
+          <div><NavLink to='/analisis' className='lavender-text text-base font-medium hover:font-bold'>Analisis Wajah</NavLink></div>
+          <div><NavLink to='/progress' className='lavender-text text-base font-medium hover:font-bold'>Progress Tracking</NavLink></div>
+          <div><NavLink to='/virtual' className='lavender-text text-base font-medium hover:font-bold'>Virtual Try-on</NavLink></div>
           </div>
         </div>
         <div className="flex flex-col gap-6">

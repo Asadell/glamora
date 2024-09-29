@@ -35,16 +35,16 @@ export default function VirtualTryOn() {
   };
 
   const handleItemSelect = (index: number) => {
-    setSelectedItem(index); // Store the selected item index
+    setSelectedItem(index);
   };
 
   return (
     <div className="container py-16 min-h-screen w-full">
-      <h1 className="text-3xl text-center text-deepSlate font-bold">
+      <h1 className="text-4xl text-center text-deepSlate font-bold">
         Virtual Try-on
       </h1>
 
-      <div className="mt-6 rounded-xl bg-white w-full items-centers justify-center h-full flex">
+      <div className="mt-10 rounded-xl bg-white w-full items-centers justify-center h-full flex">
         <div className="p-6">
           <div className="grid grid-cols-3">
             {items.map((item, index) => {
