@@ -60,7 +60,7 @@ export default function VirtualTryOn() {
               );
             })}
           </div>
-          <div className="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="my-8 grid grid-cols-2 lg:grid-cols-3 gap-4">
             {items[selected].items.map((item, index) => {
                 return (
                     <div>

@@ -5,8 +5,8 @@ const Hero = () => {
   return (
     <Container className="my-16">
       <h1 className="titleHighlight pb-10">Progress Tracking</h1>
-      <div className="flex flex-row gap-8">
-        <div className="flex-1 bg-white rounded-3xl overflow-hidden p-8">
+      <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex-1 bg-white rounded-3xl overflow-hidden w-full p-8">
           <WeeklyProgress/>
         </div>
         <div className="flex-1 bg-softIndigo rounded-3xl overflow-hidden p-8">
