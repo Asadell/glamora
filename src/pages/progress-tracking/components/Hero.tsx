@@ -10,8 +10,10 @@ const Hero = () => {
           <WeeklyProgress/>
         </div>
         <div className="flex-1 bg-softIndigo rounded-3xl overflow-hidden p-8">
-          <h2 className="text-2xl font-bold bg-deepSlate text-transparent bg-clip-text text-center mb-6">Kesimpulan</h2>
-          <p className="font-light text-xl bg-midnightBlack text-transparent bg-clip-text">Kelembapan kulit secara umum berada dalam kondisi baik, hanya sedikit hari yang menunjukkan kekeringan. Sebaliknya, sebum dan pori-pori lebih tidak stabil, terutama pada akhir minggu, dengan beberapa hari menunjukkan kondisi yang kurang optimal. Secara keseluruhan, sebagian besar metrik baik, namun sebum dan pori-pori memerlukan perhatian lebih untuk perbaikan.</p>
+          <div className="reveal">
+            <h2 className="text-2xl font-bold bg-deepSlate text-transparent bg-clip-text text-center mb-6">Kesimpulan</h2>
+            <p className="font-light text-xl bg-midnightBlack text-transparent bg-clip-text">Kelembapan kulit secara umum berada dalam kondisi baik, hanya sedikit hari yang menunjukkan kekeringan. Sebaliknya, sebum dan pori-pori lebih tidak stabil, terutama pada akhir minggu, dengan beberapa hari menunjukkan kondisi yang kurang optimal. Secara keseluruhan, sebagian besar metrik baik, namun sebum dan pori-pori memerlukan perhatian lebih untuk perbaikan.</p>
+          </div>
         </div>
       </div>
     </Container>

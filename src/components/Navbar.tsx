@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white rounded-b-[40px]">
-      <div className="min-w-full h-[120px] px-[120px] flex justify-between items-center">
+      <div className="min-w-full h-[100px] px-[120px] flex justify-between items-center">
         <NavLink to="/" className="flex items-center gap-3">
           <img src={glamora} alt="glamora" className="h-10" />
           <span className="font-bold text-2xl">Glamora</span>

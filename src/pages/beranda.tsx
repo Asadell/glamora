@@ -5,7 +5,7 @@ import Survey from "../components/Beranda/Survey";
 
 const Beranda = () => {
   return (
-    <div className="bg-lavenderHue min-h-screen ">
+    <div className="min-h-screen">
       <Hero/>
       <About/>
       <Features/>
