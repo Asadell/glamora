@@ -4,7 +4,7 @@ import { ABOUT_INFO_LIST } from "../../../constants";
 
 const About = () => {
   return (
-    <Container className="my-[50px] lg:my-[100px] p-6">
+    <Container className="my-[50px] lg:my-[100px]">
       <div className="flex flex-col lg:flex-row justify-between items-stretch gap-8 lg:gap-12 bg-paleIndigo rounded-[40px] overflow-hidden">
         <div className="p-8 flex flex-col justify-between">
           <div>
@@ -32,11 +32,11 @@ const About = () => {
           </div>
         </div>
 
-        <div className="h-full relative">
+        <div className="hidden lg:block h-full">
           <img
             src={aboutBeranda}
             alt="About"
-            className="h-64 md:h-full w-full object-cover"
+            className="h-full object-cover min-w-[24rem]"
           />
         </div>
       </div>
