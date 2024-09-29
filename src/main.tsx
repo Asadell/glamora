@@ -4,7 +4,7 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Beranda from './pages/beranda';
 import Analisis from './pages/analisis';
-import Progress from './pages/progress';
+import Progress from './pages/progress-tracking/progress';
 import Virtual from './pages/virtual/virtual';
 import Layout from './components/Layout';
 import ErrorElement from './components/ErrorElement';
