@@ -7,12 +7,13 @@ import Analisis from './pages/analisis';
 import Progress from './pages/progress';
 import Virtual from './pages/virtual';
 import Layout from './components/Layout';
+import ErrorElement from './components/ErrorElement';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout/>,
-    // errorElement: </>,
+    errorElement: <ErrorElement/>,
     children: [
       {
         index: true,
