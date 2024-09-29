@@ -5,7 +5,7 @@ import KosmetikGaya from "../components/Analisis/KosmetikGaya";
 
 const Analisis = () => {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen p-6">
       <AnalisisWajah/>
       <Kandungan/>
       <KosmetikGaya/>

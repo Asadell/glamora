@@ -59,10 +59,7 @@ import bucketCirclePurple from './progress/bucket-circle-purple.svg';
 import dropGreen from './progress/drop-green.svg';
 import dropPurple from './progress/drop-purple.svg';
 import emojiPurple from './progress/emoji-normal-purple.svg';
-
+import hero from "./beranda/hero.png";
 import glamora from './glamora.svg';
-import line1Beranda from './beranda/line-rekomendasi.png';
-import line2Beranda from './beranda/line-bentuk-wajah.png';
-import line3Beranda from './beranda/line-usia-kulit.png';
 
-export { errorGif, bubblePurple, bubbleRed, bucketCircleGreen, bucketCirclePurple, dropGreen, dropPurple, emojiPurple, moreCircle, noteText, shape1KondisiAnalysis, shape2KondisiAnalysis, shape3KondisiAnalysis, shape4KondisiAnalysis, shape1KarakterAnalysis, shape2KarakterAnalysis, shape3KarakterAnalysis, shape4KarakterAnalysis, rekomendasi1Analysis, rekomendasi2Analysis, rekomendasi3Analysis, rekomendasi4Analysis, kosmetik1Analysis, kosmetik2Analysis, kosmetik3Analysis, kacamata1Analysis, kacamata2Analysis, kacamata3Analysis, kacamata4Analysis, gaya1Analysis, gaya2Analysis, gaya3Analysis, faceAnalysis, nattaya, faceInMirror, arrowRight, virtualGif, progressGif, analisisGif, starFeature, aboutBeranda, glamora, starsRight, starsLeft, faceBeranda, macbook, calendar, ellipse, health, shapes, line1Beranda, line2Beranda, line3Beranda, ellipseAnalisis };
+export { hero, errorGif, bubblePurple, bubbleRed, bucketCircleGreen, bucketCirclePurple, dropGreen, dropPurple, emojiPurple, moreCircle, noteText, shape1KondisiAnalysis, shape2KondisiAnalysis, shape3KondisiAnalysis, shape4KondisiAnalysis, shape1KarakterAnalysis, shape2KarakterAnalysis, shape3KarakterAnalysis, shape4KarakterAnalysis, rekomendasi1Analysis, rekomendasi2Analysis, rekomendasi3Analysis, rekomendasi4Analysis, kosmetik1Analysis, kosmetik2Analysis, kosmetik3Analysis, kacamata1Analysis, kacamata2Analysis, kacamata3Analysis, kacamata4Analysis, gaya1Analysis, gaya2Analysis, gaya3Analysis, faceAnalysis, nattaya, faceInMirror, arrowRight, virtualGif, progressGif, analisisGif, starFeature, aboutBeranda, glamora, starsRight, starsLeft, faceBeranda, macbook, calendar, ellipse, health, shapes, ellipseAnalisis };

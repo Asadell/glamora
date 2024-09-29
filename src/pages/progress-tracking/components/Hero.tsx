@@ -3,7 +3,7 @@ import WeeklyProgress from "./WeeklyProgress";
 
 const Hero = () => {
   return (
-    <Container className="my-16">
+    <Container className="my-10">
       <h1 className="titleHighlight pb-10">Progress Tracking</h1>
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="flex-1 bg-white rounded-3xl overflow-hidden w-full p-8">

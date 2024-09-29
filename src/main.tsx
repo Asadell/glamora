@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Beranda from './pages/beranda';
+import Beranda from './pages/home/beranda';
 import Analisis from './pages/analisis';
 import Progress from './pages/progress-tracking/progress';
 import Virtual from './pages/virtual/virtual';
