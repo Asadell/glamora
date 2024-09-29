@@ -42,7 +42,7 @@ export default function WeeklyProgress() {
 
   progress.reverse();
   return (
-    <div>
+    <div className="reveal">
       <h2 className="text-xl font-bold bg-deepTeal text-transparent bg-clip-text text-center mb-6">
         Progress Mingguan
       </h2>

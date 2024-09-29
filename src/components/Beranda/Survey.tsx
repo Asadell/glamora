@@ -11,9 +11,9 @@ const Survey = () => {
         </div>
         <div className="flex-1">
           <div className="py-1 px-12 flex flex-col justify-center items-start">
-            <h1 className="font-bold text-[40px] mb-9 bg-deepTeal text-transparent bg-clip-text">Survey Kondisi Kulit</h1>
-            <p className="mb-8 text-[20px]">Dengan mengisi survey, dapat membantu memahami jenis kulit, kebiasaan perawatan kulit, dan kebutuhan kamu, loh.</p>
-            <NavLink to='/survey' className='py-4 px-[60px] bg-white rounded-[100px]'>
+            <h1 className="font-bold text-[32px] mb-9 bg-deepTeal text-transparent bg-clip-text">Survey Kondisi Kulit</h1>
+            <p className="mb-8 text-[20px] reveal">Dengan mengisi survey, dapat membantu memahami jenis kulit, kebiasaan perawatan kulit, dan kebutuhan kamu, loh.</p>
+            <NavLink to='/survey' className='py-4 px-[60px] bg-white rounded-[100px] reveal'>
               <span className="text-base font-bold bg-primary-gradient text-transparent bg-clip-text">Ikuti Survey</span>
             </NavLink>
           </div>
