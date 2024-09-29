@@ -21,3 +21,9 @@ body {
     @apply font-bold text-4xl text-center bg-deepSlate text-transparent bg-clip-text;
   }
 }
+
+@layer utilities {
+  .last-in-middle {
+    grid-column: 2 / span 1;
+  }
+}

@@ -1,4 +1,4 @@
-import { analisisGif, calendar, gaya1Analysis, gaya2Analysis, gaya3Analysis, health, kacamata1Analysis, kacamata2Analysis, kacamata3Analysis, kacamata4Analysis, kosmetik1Analysis, kosmetik2Analysis, kosmetik3Analysis, line1Beranda, line2Beranda, line3Beranda, progressGif, rekomendasi1Analysis, rekomendasi2Analysis, rekomendasi3Analysis, rekomendasi4Analysis, shape1KarakterAnalysis, shape1KondisiAnalysis, shape2KarakterAnalysis, shape2KondisiAnalysis, shape3KarakterAnalysis, shape3KondisiAnalysis, shape4KarakterAnalysis, shape4KondisiAnalysis, shapes, virtualGif } from "../assets";
+import { analisisGif, bubbleRed, bucketCircleGreen, calendar, dropGreen, gaya1Analysis, gaya2Analysis, gaya3Analysis, health, kacamata1Analysis, kacamata2Analysis, kacamata3Analysis, kacamata4Analysis, kosmetik1Analysis, kosmetik2Analysis, kosmetik3Analysis, line1Beranda, line2Beranda, line3Beranda, progressGif, rekomendasi1Analysis, rekomendasi2Analysis, rekomendasi3Analysis, rekomendasi4Analysis, shape1KarakterAnalysis, shape1KondisiAnalysis, shape2KarakterAnalysis, shape2KondisiAnalysis, shape3KarakterAnalysis, shape3KondisiAnalysis, shape4KarakterAnalysis, shape4KondisiAnalysis, shapes, virtualGif } from "../assets";
 
 export const NAV_LIST = [
   {
@@ -244,5 +244,190 @@ export const GAYA_RAMBUT_LIST = [
     title: 'Beachy Waves',
     text: 'Gelombang lembut yang menambahkan volume dan tekstur, cocok untuk  proporsi wajah oval.',
     image: gaya3Analysis,
+  },
+];
+
+export const CATATAN_PROGRESS_LIST = [
+  {
+    date: '7 September 2024',
+    text: 'Aku hari ini mulai pake jojoba oil.',
+    data: [
+      {
+        image: shape1KondisiAnalysis,
+        shapeType: 'Tipe',
+        shapeName: 'Normal',
+      },
+      {
+        image: shape2KondisiAnalysis,
+        shapeType: 'Kelembapan',
+        shapeName: 'Kering',
+      },
+      {
+        image: shape3KondisiAnalysis,
+        shapeType: 'Sebum',
+        shapeName: 'Kurang',
+      },
+      {
+        image: shape4KondisiAnalysis,
+        shapeType: 'Pori-pori',
+        shapeName: 'Kecil',
+      },
+    ],
+  },
+  {
+    date: '6 September 2024',
+    text: 'Hari ini mulai targetin minum air cukup!',
+    data: [
+      {
+        image: shape1KondisiAnalysis,
+        shapeType: 'Tipe',
+        shapeName: 'Normal',
+      },
+      {
+        image: shape2KondisiAnalysis,
+        shapeType: 'Kelembapan',
+        shapeName: 'Kering',
+      },
+      {
+        image: shape3KondisiAnalysis,
+        shapeType: 'Sebum',
+        shapeName: 'Kurang',
+      },
+      {
+        image: shape4KondisiAnalysis,
+        shapeType: 'Pori-pori',
+        shapeName: 'Kecil',
+      },
+    ],
+  },
+  {
+    date: '5 September 2024',
+    text: 'Pantes kerasa keringm, ternyata kurang hidrasi toh.',
+    data: [
+      {
+        image: shape1KondisiAnalysis,
+        shapeType: 'Tipe',
+        shapeName: 'Normal',
+      },
+      {
+        image: dropGreen,
+        shapeType: 'Kelembapan',
+        shapeName: 'Kering',
+      },
+      {
+        image: shape3KondisiAnalysis,
+        shapeType: 'Sebum',
+        shapeName: 'Kurang',
+      },
+      {
+        image: shape4KondisiAnalysis,
+        shapeType: 'Pori-pori',
+        shapeName: 'Kecil',
+      },
+    ],
+  },
+  {
+    date: '4 September 2024',
+    text: 'Sama saja sih, skincare-an kayak biasanya.',
+    data: [
+      {
+        image: shape1KondisiAnalysis,
+        shapeType: 'Tipe',
+        shapeName: 'Normal',
+      },
+      {
+        image: dropGreen,
+        shapeType: 'Kelembapan',
+        shapeName: 'Kering',
+      },
+      {
+        image: bucketCircleGreen,
+        shapeType: 'Sebum',
+        shapeName: 'Kurang',
+      },
+      {
+        image: shape4KondisiAnalysis,
+        shapeType: 'Pori-pori',
+        shapeName: 'Kecil',
+      },
+    ],
+  },
+  {
+    date: '3 September 2024',
+    text: 'Sama saja sih, skincare-an kayak biasanya.',
+    data: [
+      {
+        image: shape1KondisiAnalysis,
+        shapeType: 'Tipe',
+        shapeName: 'Normal',
+      },
+      {
+        image: dropGreen,
+        shapeType: 'Kelembapan',
+        shapeName: 'Kering',
+      },
+      {
+        image: bucketCircleGreen,
+        shapeType: 'Sebum',
+        shapeName: 'Kurang',
+      },
+      {
+        image: shape4KondisiAnalysis,
+        shapeType: 'Pori-pori',
+        shapeName: 'Kecil',
+      },
+    ],
+  },
+  {
+    date: '2 September 2024',
+    text: '',
+    data: [
+      {
+        image: shape1KondisiAnalysis,
+        shapeType: 'Tipe',
+        shapeName: 'Normal',
+      },
+      {
+        image: dropGreen,
+        shapeType: 'Kelembapan',
+        shapeName: 'Kering',
+      },
+      {
+        image: bucketCircleGreen,
+        shapeType: 'Sebum',
+        shapeName: 'Kurang',
+      },
+      {
+        image: bubbleRed,
+        shapeType: 'Pori-pori',
+        shapeName: 'Kecil',
+      },
+    ],
+  },
+  {
+    date: '1 September 2024',
+    text: '',
+    data: [
+      {
+        image: shape1KondisiAnalysis,
+        shapeType: 'Tipe',
+        shapeName: 'Normal',
+      },
+      {
+        image: dropGreen,
+        shapeType: 'Kelembapan',
+        shapeName: 'Kering',
+      },
+      {
+        image: shape3KondisiAnalysis,
+        shapeType: 'Sebum',
+        shapeName: 'Kurang',
+      },
+      {
+        image: bubbleRed,
+        shapeType: 'Pori-pori',
+        shapeName: 'Kecil',
+      },
+    ],
   },
 ];

@@ -12,7 +12,7 @@ const Navbar = () => {
           <img src={glamora} alt="glamora" className="h-10" />
           <span className="font-bold text-2xl">Glamora</span>
         </NavLink>
-        <div className="md:order-2 w-52 flex justify-end">
+        <div className="md:order-2 w-  flex justify-end">
           {
             pathname === '/' 
           ? 

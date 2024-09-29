@@ -43,5 +43,14 @@ import shape2KondisiAnalysis from './analisis/shape-2-kondisi.svg';
 import shape3KondisiAnalysis from './analisis/shape-3-kondisi.svg';
 import shape4KondisiAnalysis from './analisis/shape-4-kondisi.svg';
 import noteText from './analisis/note-text.svg';
+import moreCircle from './progress/more-circle.svg';
+import bubblePurple from './progress/bubble-purple.svg';
+import bubbleRed from './progress/bubble-red.svg';
+import bucketCircleGreen from './progress/bucket-circle-green.svg';
+import bucketCirclePurple from './progress/bucket-circle-purple.svg';
+import dropGreen from './progress/drop-green.svg';
+import dropPurple from './progress/drop-purple.svg';
+import emojiPurple from './progress/emoji-normal-purple.svg';
+import errorGif from './404-gif.gif';
 
-export { noteText, shape1KondisiAnalysis, shape2KondisiAnalysis, shape3KondisiAnalysis, shape4KondisiAnalysis, shape1KarakterAnalysis, shape2KarakterAnalysis, shape3KarakterAnalysis, shape4KarakterAnalysis, rekomendasi1Analysis, rekomendasi2Analysis, rekomendasi3Analysis, rekomendasi4Analysis, kosmetik1Analysis, kosmetik2Analysis, kosmetik3Analysis, kacamata1Analysis, kacamata2Analysis, kacamata3Analysis, kacamata4Analysis, gaya1Analysis, gaya2Analysis, gaya3Analysis, faceAnalysis, nattaya, faceInMirror, arrowRight, virtualGif, progressGif, analisisGif, starFeature, aboutBeranda, glamora, starsRight, starsLeft, faceBeranda, macbook, calendar, ellipse, health, shapes, line1Beranda, line2Beranda, line3Beranda, ellipseAnalisis };
+export { errorGif, bubblePurple, bubbleRed, bucketCircleGreen, bucketCirclePurple, dropGreen, dropPurple, emojiPurple, moreCircle, noteText, shape1KondisiAnalysis, shape2KondisiAnalysis, shape3KondisiAnalysis, shape4KondisiAnalysis, shape1KarakterAnalysis, shape2KarakterAnalysis, shape3KarakterAnalysis, shape4KarakterAnalysis, rekomendasi1Analysis, rekomendasi2Analysis, rekomendasi3Analysis, rekomendasi4Analysis, kosmetik1Analysis, kosmetik2Analysis, kosmetik3Analysis, kacamata1Analysis, kacamata2Analysis, kacamata3Analysis, kacamata4Analysis, gaya1Analysis, gaya2Analysis, gaya3Analysis, faceAnalysis, nattaya, faceInMirror, arrowRight, virtualGif, progressGif, analisisGif, starFeature, aboutBeranda, glamora, starsRight, starsLeft, faceBeranda, macbook, calendar, ellipse, health, shapes, line1Beranda, line2Beranda, line3Beranda, ellipseAnalisis };
