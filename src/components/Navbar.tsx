@@ -18,7 +18,7 @@ const Navbar = () => {
           <ul className="flex gap-6">
             {NAV_LIST.map((nav) => (
               <li>
-                <NavLink to={nav.url} className={pathname === nav.url ? 'navbar-border-effect text-midnightBlack' : 'hover:navbar-border-effect text-slateStorm'}>{nav.title}</NavLink>
+                <NavLink key={nav.url} to={nav.url} className={pathname === nav.url ? 'navbar-border-effect text-midnightBlack' : 'hover:navbar-border-effect text-slateStorm'}>{nav.title}</NavLink>
             </li>
             ))}
           </ul>

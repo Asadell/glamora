@@ -7,26 +7,33 @@ interface ItemCardProps {
 }
 
 export default function ItemCard({
-  ...props
+  title,
+  image,
+  isActive,
+  onClick,
+  additionalClass,
 }: ItemCardProps) {
-  const bgColor = props.isActive ? "bg-accent-100" : "bg-grey-100";
-  const borderColor = props.isActive ? "accent-200" : "grey-100";
-  const textColor = props.isActive ? 'text-accent-700' : 'text-grey-500';
+  const bgColor = isActive ? "bg-accent-100" : "bg-grey-100";
+  const borderColor = isActive ? "accent-200" : "grey-100";
+  const textColor = isActive ? 'text-accent-700' : 'text-grey-500';
+
+  const imgSrc = `/src/assets/items/${image}`;
+  const img = new Image();
+  img.src = imgSrc;
 
   return (
     <div>
       <div
-      className={`w-full h-full border-4 rounded-xl flex justify-center items-center cursor-pointer border-${borderColor} ${bgColor}`}
-      onClick={props.onClick}
-    >
-      <img
-        src={`/src/assets/items/${props.image}`}
-        alt={props.title}
-        className={`w-full h-28 ${props.additionalClass ?? 'object-cover'} rounded-xl`}
-      />
-      
-    </div>
-    <p className={`my-2 text-lg ${textColor} ${props.isActive ? 'font-bold' : ''}`}>{props.title}</p>
+        className={`w-full h-full border-4 rounded-xl flex justify-center items-center cursor-pointer border-${borderColor} ${bgColor}`}
+        onClick={onClick}
+      >
+        <img
+          src={imgSrc}
+          alt={title}
+          className={`w-full h-28 ${additionalClass ?? 'object-cover'} rounded-xl`}
+        />
+      </div>
+      <p className={`my-2 text-lg ${textColor} ${isActive ? 'font-bold' : ''}`}>{title}</p>
     </div>
   );
 }

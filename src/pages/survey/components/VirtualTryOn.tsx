@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Chip from "./Chip";
 import PaginationIndicator from "./PaginationIndicator";
 import ItemCard from "./ItemCard";
@@ -7,12 +7,19 @@ import TryOnVideo from "./TryOnVideo";
 
 
 export default function VirtualTryOn() {
+  const containerRef = useRef<HTMLDivElement>(null);
   const [selected, setSelected] = useState(0);
   const [selectedPage, setSelectedPage] = useState(1);
   const [selectedItem, setSelectedItem] = useState(0);
+  const [tryOnKey, setTryOnKey] = useState(0);
   const totalPage = 5;
 
   const items: TryOnItem[] = TRY_ON_ITEMS;
+
+  useEffect(() => {
+    setTryOnKey((prev) => prev + 1);  
+
+  }, []);
 
   const handleSelectedPageClick = (isNext: boolean) => {
     if (isNext) {
@@ -78,8 +85,8 @@ export default function VirtualTryOn() {
             />
           </div>
         </div>
-        <div className="w-full">
-          <TryOnVideo selectedItemImage={`${items[selected].prefix}/${items[selected].items[selectedItem].image}`}
+        <div className="w-full" ref={containerRef}>
+          <TryOnVideo key={tryOnKey} containerRef={containerRef} selectedItemImage={`${items[selected].prefix}/${items[selected].items[selectedItem].image}`}
           />
         </div>
       </div>
