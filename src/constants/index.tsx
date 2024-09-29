@@ -86,24 +86,28 @@ export const FEATURE_BERANDA_LIST = [
     isFeature: false,
     title: 'Fitur Utama',
     text: 'Kira-kira fitur apa aja ya yang tersedia di Glamora? Yuk, kepoin!',
+    url: '',
     image: '',
   },
   {
     isFeature: true,
     title: 'Analisis Wajah',
     text: 'Ketahui bentuk wajah dan kondisi kulit untuk menemukan gaya dan perawatan yang sesuai.',
+    url: '/analisis',
     image: analisisGif,
   },
   {
     isFeature: true,
     title: 'Progress Tracking',
     text: 'Lacak perkembangan kondisi kulitmu seiring waktu untuk mencapai hasil yang diinginkan.',
+    url: '/progress',
     image: progressGif,
   },
   {
     isFeature: true,
     title: 'Virtual Try-on',
     text: 'Dengan teknologi AR, coba berbagai gaya aksesoris dengan praktis secara virtual.',
+    url: '/virtual',
     image: virtualGif,
   },
 ];

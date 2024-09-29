@@ -32,11 +32,11 @@ const About = () => {
           </div>
         </div>
 
-        <div className="hidden lg:block h-full">
+        <div className="h-full relative">
           <img
             src={aboutBeranda}
             alt="About"
-            className="h-full object-cover min-w-[24rem]"
+            className="h-64 md:h-full w-full object-cover"
           />
         </div>
       </div>
