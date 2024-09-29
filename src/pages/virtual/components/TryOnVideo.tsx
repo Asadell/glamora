@@ -14,12 +14,12 @@ export default function TryOnVideo({ selectedItemImage, containerRef }: TryOnVid
   const [imageProps, setImageProps] = useState({
     x: 100,
     y: 100,
-    width: 100, // Default width
-    height: 0, // To be calculated
+    width: 100, 
+    height: 0,
     isDragging: false,
   });
   const [selectedShape, setSelectedShape] = useState<string | null>(null);
-  const [image] = useImage(`/src/assets/items/${selectedItemImage}` || "");
+  const [image] = useImage(selectedItemImage ? `/src/assets/items/${selectedItemImage}` : "");
 
   const transformerRef = useRef<any>(null);
   const imageRef = useRef<any>(null);
@@ -40,17 +40,21 @@ export default function TryOnVideo({ selectedItemImage, containerRef }: TryOnVid
     return () => {
       window.removeEventListener("resize", updateStageSize);
     };
-  }, []);
+  }, [containerRef]);
 
   useEffect(() => {
     handleImageLoad();
-
+    // Reset selectedShape whenever the image changes
+    setSelectedShape(null);
   }, [image]);
 
   useEffect(() => {
     if (selectedShape && transformerRef.current && imageRef.current) {
       transformerRef.current.nodes([imageRef.current]);
       transformerRef.current.getLayer().batchDraw();
+    } else if (transformerRef.current) {
+      // Clear the transformer if no shape is selected
+      transformerRef.current.nodes([]);
     }
   }, [selectedShape]);
 
@@ -64,7 +68,6 @@ export default function TryOnVideo({ selectedItemImage, containerRef }: TryOnVid
   };
 
   const handleImageLoad = () => {
-    console.log('image load');
     if (imageRef.current) {
       const img = imageRef.current.image(); 
       const aspectRatio = img.width / img.height;
@@ -77,7 +80,6 @@ export default function TryOnVideo({ selectedItemImage, containerRef }: TryOnVid
         width: defaultWidth,
         height: defaultHeight,
       });
-      console.log(`defaultWidth: ${defaultWidth}, defaultHeight: ${defaultHeight}`);
     }
   };
 
@@ -85,6 +87,14 @@ export default function TryOnVideo({ selectedItemImage, containerRef }: TryOnVid
     width: 1280,
     height: 720,
     facingMode: "user",
+  };
+
+  const handleImageClick = () => {
+    if (selectedShape === "image") {
+      setSelectedShape(null);
+    } else {
+      setSelectedShape("image");
+    }
   };
 
   return (
@@ -100,8 +110,8 @@ export default function TryOnVideo({ selectedItemImage, containerRef }: TryOnVid
           className="w-full h-full object-cover absolute"
         />
         <Stage 
-         width={stageSize.width} height={stageSize.height}
-         >
+          width={stageSize.width} height={stageSize.height}
+        >
           <Layer>
             {image && (
               <>
@@ -110,20 +120,19 @@ export default function TryOnVideo({ selectedItemImage, containerRef }: TryOnVid
                   ref={imageRef}
                   x={imageProps.x}
                   y={imageProps.y}
-                  width={imageProps.width} // Maintains aspect ratio
-                  height={imageProps.height} // Height based on width
+                  width={imageProps.width} 
+                  height={imageProps.height}
                   draggable
-                  onClick={() => setSelectedShape("image")}
+                  onClick={handleImageClick} 
                   onDragEnd={handleDragEnd}
-                  onLoad={handleImageLoad} // Set default size after image loads
+                  onLoad={handleImageLoad} 
                 />
                 {selectedShape === "image" && (
                   <Transformer
                     ref={transformerRef}
-                    rotateEnabled={false} // Disable rotation (optional)
-                    keepRatio={true} // Maintain aspect ratio when resizing
+                    rotateEnabled={false} 
+                    keepRatio={true} 
                     boundBoxFunc={(oldBox, newBox) => {
-                      // Limit minimum size (optional)
                       if (newBox.width < 50 || newBox.height < 50) {
                         return oldBox;
                       }
